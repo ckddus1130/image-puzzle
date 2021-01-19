@@ -1,0 +1,135 @@
+/* 자주 사용되는 폰트 사이즈 색상 등 을 변수로 사용 
+   유지 보수에 용이  */
+:root {
+  /* colors */
+  --color-blue: #3b5998;
+  --color-white: white;
+  --color-black: black;
+  --color-green: green;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-time {
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: var(--color-blue);
+}
+
+ul {
+  margin-top: 1rem;
+  list-style: none;
+  border: 2px solid var(--color-blue);
+  display: grid;
+  /* 하나의 요소를 4번 반복하겠다. */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+li {
+  width: 100px;
+  height: 100px;
+  background: url("https://placeimg.com/400/400/any");
+}
+
+.start-button {
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.game-text {
+  position: absolute;
+  color: var(--color-green);
+  font-size: 2rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.list0 {
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+.list1 {
+  background-position-x: -100px;
+  background-position-y: 0px;
+}
+.list2 {
+  background-position-x: -200px;
+  background-position-y: 0px;
+}
+.list3 {
+  background-position-x: -300px;
+  background-position-y: 0px;
+}
+.list4 {
+  background-position-x: 0px;
+  background-position-y: -100px;
+}
+.list5 {
+  background-position-x: -100px;
+  background-position-y: -100px;
+}
+.list6 {
+  background-position-x: -200px;
+  background-position-y: -100px;
+}
+.list7 {
+  background-position-x: -300px;
+  background-position-y: -100px;
+}
+.list8 {
+  background-position-x: 0px;
+  background-position-y: -200px;
+}
+.list9 {
+  background-position-x: -100px;
+  background-position-y: -200px;
+}
+.list10 {
+  background-position-x: -200px;
+  background-position-y: -200px;
+}
+.list11 {
+  background-position-x: -300px;
+  background-position-y: -200px;
+}
+.list12 {
+  background-position-x: 0px;
+  background-position-y: -300px;
+}
+.list13 {
+  background-position-x: -100px;
+  background-position-y: -300px;
+}
+.list14 {
+  background-position-x: -200px;
+  background-position-y: -300px;
+}
+.list15 {
+  background-position-x: -300px;
+  background-position-y: -300px;
+}
+
+.cheat-button {
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
