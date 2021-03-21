@@ -75,11 +75,13 @@ function shuffle(array) {
   let index = array.length - 1; // 제일 마지막 인덱스
   while(index > 0) {
     const randomIndex = Math.floor(Math.random()*(index+1));
+    console.log(Math.floor(Math.random()*(16)));
     [array[index], array[randomIndex]] = [array[randomIndex], array[index]];
     index--;
   }
   return array;
 };
+
 
 // Events
 
